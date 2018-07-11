@@ -76,6 +76,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data Saving support
 
     func saveContext () {
+        //OBJECT THAT JUST GIVES US ACCESS TO THE DATA STORED ON OUR DEVICE
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
